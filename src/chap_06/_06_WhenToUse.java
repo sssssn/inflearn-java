@@ -5,7 +5,7 @@ public class _06_WhenToUse {
 //         int result = number * number;
 //         return result;
 //         return number * number;
-        return getPower(number, 2);
+        return getPower(number, 2); // 메서드 내에서 또 다른 메서드 호출
     }
 
     public static int getPower(int number, int exponent) {
