@@ -15,19 +15,19 @@ public class BlackBox {
 
     // 생성자
     BlackBox() {
-        System.out.println("기본 생성자 호출");
-        this.serialNumber = ++counter;
-        System.out.println("새로운 시리얼 번호를 발급 받았습니다 : " + this.serialNumber);
+//        System.out.println("기본 생성자 호출");
+//        this.serialNumber = ++counter;
+//        System.out.println("새로운 시리얼 번호를 발급 받았습니다 : " + this.serialNumber);
     }
 
     BlackBox(String modelName, String resolution, int price, String color) {
-        this(); // 기본 생성자 호출
-
-        System.out.println("사용자 정의 생성자 호출");
-        this.modelName = modelName;
-        this.resolution = resolution;
-        this.price = price;
-        this.color = color;
+//        this(); // 기본 생성자 호출
+//
+//        System.out.println("사용자 정의 생성자 호출");
+//        this.modelName = modelName;
+//        this.resolution = resolution;
+//        this.price = price;
+//        this.color = color;
     }
 
     // 인스턴스 메서드
@@ -90,4 +90,46 @@ public class BlackBox {
 //    void appendModelName(String s) {
 //        modelName += s; // 상관 없음
 //    }
+
+    // Getter (값을 가져오는 메서드)
+    String getModelName() {
+        return modelName;
+    }
+
+    // Setter (값을 설정하는 메서드)
+    void setModelName(String modelName) {
+        this.modelName = modelName;
+    }
+
+    String getResolution() {
+        if (resolution == null || resolution.isEmpty()) {
+            return "판매자에게 문의하세요.";
+        }
+        return resolution;
+    }
+
+    void setResolution(String resolution) {
+        this.resolution = resolution;
+    }
+
+    int getPrice() {
+        return price;
+    }
+
+    void setPrice(int price) {
+        if (price < 100000) {
+            this.price = 100000;
+        }
+        else {
+            this.price = price;
+        }
+    }
+
+    String getColor() {
+        return color;
+    }
+
+    void setColor(String color) {
+        this.color = color;
+    }
 }
