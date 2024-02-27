@@ -1,5 +1,6 @@
 package chap_07;
 
+// 하나의 파일에 여러 개의 클래스를 정의할 수 있으나, public 클래스명과 java 파일명은 동일해야 함
 public class BlackBoxRefurbish {
     public String modelName; // 모델명
     String resolution; // 해상도

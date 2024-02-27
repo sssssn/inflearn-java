@@ -1,19 +1,20 @@
 package chap_07;
 
 public class BlackBox {
-    // 인스턴스 변수, 필드 ≒ 설계도
+    // 클래스 : 서로 다른 자료형의 값 여러 개를 저장 및 한꺼번에 관리하는 형태
+
+    // 인스턴스 변수 : 해당 클래스로부터 생성된 각 객체마다 서로 다른 값을 가지는 변수 ≒ 설계도
     String modelName; // 모델명
     String resolution; // 해상도
     int price; // 가격
     String color; // 색상
     int serialNumber; // 시리얼 번호
 
+    // 클래스 변수 : 해당 클래스로부터 생성된 모든 객체에서 동일한 값을 가지는 변수
     static int counter = 0; // 시리얼 번호를 생성해 주는 역할 (++ 연산을 통해 값을 증가)
-
-    // 클래스 변수
     static boolean canAutoReport = false; // 자동 신고 기능
 
-    // 생성자
+    // 생성자 : 객체가 생성될 때 자동으로 호출되는 메서드
     BlackBox() {
 //        System.out.println("기본 생성자 호출");
 //        this.serialNumber = ++counter;
@@ -76,7 +77,7 @@ public class BlackBox {
     static void callServiceCenter() {
         System.out.println("서비스 센터(1588-oooo) 로 연결합니다.");
         // modelName = "test"; // 인스턴스 변수는 직접 접근 불가
-        canAutoReport = false;
+        canAutoReport = false; // 클래스 변수는 가능
     }
 
     // 인스턴스 변수와 전달받은 파라미터 변수의 이름이 동일한 경우

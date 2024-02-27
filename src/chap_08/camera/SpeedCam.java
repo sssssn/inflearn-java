@@ -4,6 +4,7 @@ import chap_08.detector.Detectable;
 import chap_08.repoter.Reportable;
 
 public class SpeedCam extends Camera {
+    // 인터페이스 변수
     private Detectable detector;
     private Reportable reporter;
 

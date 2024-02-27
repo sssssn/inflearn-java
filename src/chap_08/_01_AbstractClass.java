@@ -10,7 +10,7 @@ public class _01_AbstractClass {
         // 추상 클래스 (아직 완성되지 않은 클래스) : 객체를 생성할 수 없음, 자식 클래스로는 생성 가능
         // 추상 메서드 (추상 클래스 또는 인터페이스에서 사용 가능한, 껍데기만 있는 메서드)
 
-//        Camera camera = new Camera(); // 에러
+//        Camera camera = new Camera(); // 에러 (추상 클래스)
 
         FactoryCam factoryCam = new FactoryCam();
 //        Camera factoryCam = new FactoryCam(); // 부모 클래스로 정의

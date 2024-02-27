@@ -3,8 +3,9 @@ package chap_08.camera;
 import chap_08.detector.Detectable;
 import chap_08.repoter.Reportable;
 
-//    public class FactoryCam extends Camera {
+//public class FactoryCam extends Camera {
 public class FactoryCam extends Camera implements Detectable, Reportable {
+    // 인터페이스 변수
     private Detectable detector;
     private Reportable reporter;
 

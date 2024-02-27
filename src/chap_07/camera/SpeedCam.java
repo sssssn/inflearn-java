@@ -6,7 +6,7 @@ public class SpeedCam extends Camera { // 자식 클래스
 
     public SpeedCam() {
 //        this.name = "과속 단속 카메라";
-        super("과속 단속 카메라");
+        super("과속 단속 카메라"); // 부모 클래스의 생성자 호출
     }
 
     public void takePicture() {

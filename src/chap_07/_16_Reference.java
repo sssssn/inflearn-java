@@ -45,7 +45,7 @@ public class _16_Reference {
         c2.name = "카메라2";
         System.out.println(c1.name);
         System.out.println(c2.name);
-        c2 = c1; // Camera c1 = new Camera(); 참조
+        c2 = c1; // c1이 참조하고 있는 new Camera(); 참조
         System.out.println(c1.name);
         System.out.println(c2.name);
         c2.name = "고장난 카메라";

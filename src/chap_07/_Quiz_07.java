@@ -49,22 +49,22 @@ class HamBurger {
 
 class CheeseBurger extends HamBurger {
     public CheeseBurger() {
-        super("치즈버거");
+        super("치즈버거"); // 부모 클래스의 생성자 호출
     }
 
     public void cook() {
-        super.cook();
+        super.cook(); // 부모 클래스의 메서드 호출
         System.out.println("+ 치즈");
     }
 }
 
 class ShrimpBurger extends HamBurger {
     public ShrimpBurger() {
-        super("새우버거");
+        super("새우버거"); // 부모 클래스의 생성자 호출
     }
 
     public void cook() {
-        super.cook();
+        super.cook(); // 부모 클래스의 메서드 호출
         System.out.println("+ 새우");
     }
 }

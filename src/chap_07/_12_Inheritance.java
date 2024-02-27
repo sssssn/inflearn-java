@@ -6,7 +6,7 @@ import chap_07.camera.SpeedCam;
 
 public class _12_Inheritance {
     public static void main(String[] args) {
-        // 상속
+        // 상속 (하나의 부모로만 상속 받을 수 있음 = 단일 상속)
         Camera camera = new Camera();
         FactoryCam factoryCam = new FactoryCam();
         SpeedCam speedCam = new SpeedCam();
