@@ -24,14 +24,14 @@ public class _02_GenericClass {
         System.out.println("--------------------");
 
 //        int c3Name = c3.name; // 에러
-        int c3Name = (int) c3.name;
+        int c3Name = (int) c3.name; // 형 변환
         System.out.println("주문 고객 번호 : " + c3Name);
 
 //        String c4Name = c4.name; // 에러
-        String c4Name = (String) c4.name;
+        String c4Name = (String) c4.name; // 형 변환
         System.out.println("주문 고객 이름 : " + c4Name);
 
-//        c4Name = (String) c3.name; // 에러
+//        c4Name = (String) c3.name; // 에러 (형 변환 잘못할 시 실행 X)
 
         System.out.println("--------------------");
 
@@ -54,7 +54,7 @@ public class _02_GenericClass {
         CoffeeByUser<User> c8 = new CoffeeByUser<>(new VIPUser("선녀"));
         c8.ready();
 
-//        CoffeeByUser<User> c9 = new CoffeeByUser<>(new BlackBox()); // 에러
+//        CoffeeByUser<User> c9 = new CoffeeByUser<>(new BlackBox()); // 에러 (상속하지 않는 클래스)
 
         System.out.println("--------------------");
 
@@ -76,6 +76,6 @@ public class _02_GenericClass {
     }
 }
 
-//    class BlackBox {
+//class BlackBox {
 
-//    }
+//}

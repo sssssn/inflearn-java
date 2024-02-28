@@ -12,7 +12,7 @@ public class _02_AnonymousClass2 {
     }
 
     private static HomeMadeBurger getBroMadeBurger() {
-        return new HomeMadeBurger() {
+        return new HomeMadeBurger() { // 익명 클래스
             @Override
             public void cook() {
                 System.out.println("집에서 만드는 동생표 군대리아");
@@ -22,7 +22,7 @@ public class _02_AnonymousClass2 {
     }
 
     public static HomeMadeBurger getMomMadeBurger() {
-        return new HomeMadeBurger() {
+        return new HomeMadeBurger() { // 익명 클래스
             @Override
             public void cook() {
                 System.out.println("집에서 만드는 엄마표 수제 버거");
@@ -32,6 +32,6 @@ public class _02_AnonymousClass2 {
     }
 }
 
-abstract class HomeMadeBurger {
-    public abstract void cook();
+abstract class HomeMadeBurger { // 추상 클래스
+    public abstract void cook(); // 추상 메서드
 }

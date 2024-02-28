@@ -36,7 +36,7 @@ public class _05_Stream {
 
         // 90점 이상인 점수
         Arrays.stream(scores).filter(x -> x >= 90).forEach(x -> System.out.println(x));
-//        Arrays.stream(scores).filter(x -> x >= 90).forEach(System.out::println);
+//        Arrays.stream(scores).filter(x -> x >= 90).forEach(System.out::println); // soutc
         System.out.println("--------------------");
 
         // 90점 이상인 사람의 수

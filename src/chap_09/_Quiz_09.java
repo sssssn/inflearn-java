@@ -29,7 +29,7 @@ public class _Quiz_09 {
         System.out.println("--------------------");
 
         for (Student student : list) {
-            if (student.certification.equals("자바")) {
+            if (student.certification.equals("자바")) { // 문자를 비교할 때 ==가 아닌 equals 사용!
                 System.out.println(student.name);
             }
         }

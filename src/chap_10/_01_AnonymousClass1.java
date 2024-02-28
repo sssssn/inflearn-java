@@ -16,7 +16,8 @@ public class _01_AnonymousClass1 {
         System.out.println("--------------------");
 
         // 굉장히 친한 친구 방문
-        Coffee specialCoffee = new Coffee() {
+//        Coffee specialCoffee = new Coffee();
+        Coffee specialCoffee = new Coffee() { // 익명 클래스
             @Override
             public void order(String coffee) {
                 super.order(coffee);

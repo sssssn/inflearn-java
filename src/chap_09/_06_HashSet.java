@@ -6,7 +6,7 @@ import java.util.LinkedHashSet;
 public class _06_HashSet {
     public static void main(String[] args) {
         // 세트
-        // 중복 허용, 순서 보장 X
+        // 중복 허용 X, 순서 보장 X
         HashSet<String> set = new HashSet<>();
 
         // 추가
@@ -15,10 +15,10 @@ public class _06_HashSet {
         set.add("음료");
         set.add("소금");
         set.add("후추");
-        set.add("삼겹살");
+        set.add("삼겹살"); // 중복 허용 X
         set.add("깻잎");
         set.add("상추");
-        set.add("삼겹살");
+        set.add("삼겹살"); // 중복 허용 X
 
         System.out.println("총 구매 상품 수 : " + set.size());
 
@@ -39,7 +39,7 @@ public class _06_HashSet {
         // 삭제
         System.out.println("총 구매 상품 수 (삼겹살 구매 전) : " + set.size()); // 7
         set.remove("삼겹살");
-        System.out.println("총 구매 상품 수 (삼겹살 구매 전) : " + set.size()); // 6
+        System.out.println("총 구매 상품 수 (삼겹살 구매 후) : " + set.size()); // 6
 
         System.out.println("--------------------");
 

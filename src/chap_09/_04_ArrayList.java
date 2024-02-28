@@ -7,7 +7,7 @@ public class _04_ArrayList {
     public static void main(String[] args) {
         // 컬렉션 프레임워크 : 많은 데이터를 쉽고 편리하게, 효과적으로 관리하기 위해 제공해주는 클래스 모음 (List, Set, Map)
         // 어레이 리스트
-        // 중복 허용, 순서 보장 O
+        // 중복 허용 O, 순서 보장 O
         ArrayList<String> list = new ArrayList<>();
 
         // 추가
@@ -35,7 +35,7 @@ public class _04_ArrayList {
         System.out.println("--------------------");
 
         System.out.println("남은 학생 수 (제외 전) : " + list.size()); // 4
-        list.remove(list.size() - 1);
+        list.remove(list.size() - 1); // 마지막 인덱스
         System.out.println("남은 학생 수 (제외 후) : " + list.size()); // 3
 
         System.out.println("--------------------");
@@ -49,7 +49,7 @@ public class _04_ArrayList {
 
         // 변경 (수강권 양도)
         System.out.println("수강권 양도 전 : " + list.get(0));
-        list.set(0, "선녀선녀");
+        list.set(0, "선녀선녀"); // 처음 인덱스
         System.out.println("수강권 양도 후 : " + list.get(0));
 
         System.out.println("--------------------");

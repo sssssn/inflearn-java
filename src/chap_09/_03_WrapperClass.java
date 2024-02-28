@@ -21,7 +21,7 @@ public class _03_WrapperClass {
 
         System.out.println("--------------------");
 
-        String s = i.toString();
+        String s = i.toString(); // 형 변환
         System.out.println(s);
     }
 }

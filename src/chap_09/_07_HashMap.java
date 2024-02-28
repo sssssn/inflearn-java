@@ -6,7 +6,7 @@ import java.util.LinkedHashMap;
 public class _07_HashMap {
     public static void main(String[] args) {
         // 맵 (Key, Value)
-        // 중복 허용, 순서 보장 X
+        // 중복 허용 X, 순서 보장 X
         HashMap<String, Integer> map = new HashMap<>();
 
         // 추가
@@ -81,7 +81,7 @@ public class _07_HashMap {
 
         map.put("모찌", 10);
         map.put("모찌", 30);
-        map.put("모찌", 50); // 값(Value)만 업데이트
+        map.put("모찌", 50); // 중복 허용 X, 값(Value)만 업데이트
 
         for (String key : map.keySet()) {
             System.out.println("고객 이름 : " + key + "\t포인트 : " + map.get(key));

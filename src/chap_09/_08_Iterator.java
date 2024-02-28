@@ -4,8 +4,8 @@ import java.util.*;
 
 public class _08_Iterator {
     public static void main(String[] args) {
-        // 이터레이터 (커서)
-        List<String> list = new ArrayList<>();
+        // 이터레이터 ≒ 커서
+        List<String> list = new ArrayList<>(); // 리스트 인터페이스에서 제공해주는 메서드는 동일하게 사용
 //        List<String> list2 = new LinkedList<>(); // 리스트 인터페이스에서 제공해주는 메서드는 동일하게 사용
 
         // 추가
@@ -34,14 +34,14 @@ public class _08_Iterator {
         System.out.println("--------------------");
 
         it = list.iterator(); // 커서를 처음 위치로 이동
-        while (it.hasNext()) {
+        while (it.hasNext()) { // 다음에 가져올 데이터가 있는지
             System.out.println(it.next());
         }
 
         System.out.println("--------------------");
 
         it = list.iterator(); // 커서를 처음 위치로 이동
-        while (it.hasNext()) {
+        while (it.hasNext()) { // 다음에 가져올 데이터가 있는지
             String s = it.next();
             if (s.contains("(알 수 없음)")) {
                 it.remove(); // 삭제
@@ -49,7 +49,7 @@ public class _08_Iterator {
         }
 
         it = list.iterator(); // 커서를 처음 위치로 이동
-        while (it.hasNext()) {
+        while (it.hasNext()) { // 다음에 가져올 데이터가 있는지
             System.out.println(it.next());
         }
 
@@ -60,7 +60,7 @@ public class _08_Iterator {
         set.add("두부");
         set.add("팡이");
 
-        Iterator<String> itSet = set.iterator();
+        Iterator<String> itSet = set.iterator(); // set.iterator(); -> CTRL + ALT + V
         while (itSet.hasNext()) {
             System.out.println(itSet.next());
         }
@@ -75,7 +75,7 @@ public class _08_Iterator {
 //        map.iterator(); // 에러 (제공되지 않음)
 
         // 순회 (Key)
-        Iterator<String> itMapKey = map.keySet().iterator();
+        Iterator<String> itMapKey = map.keySet().iterator(); // map.keySet().iterator(); -> CTRL + ALT + V
         while (itMapKey.hasNext()) {
             System.out.println(itMapKey.next());
         }
@@ -83,7 +83,7 @@ public class _08_Iterator {
         System.out.println("--------------------");
 
         // 순회 (Value)
-        Iterator<Integer> itMapValue = map.values().iterator();
+        Iterator<Integer> itMapValue = map.values().iterator(); // map.values().iterator(); -> CTRL + ALT + V
         while (itMapValue.hasNext()) {
             System.out.println(itMapValue.next());
         }
@@ -91,7 +91,7 @@ public class _08_Iterator {
         System.out.println("--------------------");
 
         // 순회 (Key & Value)
-        Iterator<Map.Entry<String, Integer>> itMap = map.entrySet().iterator();
+        Iterator<Map.Entry<String, Integer>> itMap = map.entrySet().iterator(); // map.entrySet().iterator(); -> CTRL + ALT + V
         while (itMap.hasNext()) {
             System.out.println(itMap.next());
         }
