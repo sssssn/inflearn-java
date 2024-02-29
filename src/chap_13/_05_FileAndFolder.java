@@ -9,7 +9,7 @@ public class _05_FileAndFolder {
         String folder = "src/chap_13"; // 상대 경로
         File filesAndFolders = new File(folder);
         System.out.println("현재 폴더 경로 : " + filesAndFolders.getAbsolutePath());
-        for (File file : filesAndFolders.listFiles()) {
+        for (File file : filesAndFolders.listFiles()) { // 모든 파일과 폴더 목록
             if (file.isFile()) {
                 System.out.println("(파일) " + file.getName());
             } else if (file.isDirectory()) {

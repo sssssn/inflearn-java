@@ -15,7 +15,7 @@ public class _06_ReadWriteFile {
 //        try (BufferedWriter bw = new BufferedWriter(new FileWriter("goodjob.txt", true))) { // 내용 추가
 ////            bw.write("1. 이제 거의 끝이 보여요.");
 ////            bw.newLine(); // 줄바꿈
-////            bw.write("2. 여기까지 오신 나 자신 정말 대단해요!");
+////            bw.write("2. 여기까지 온 나 자신 정말 대단해요!");
 ////            bw.newLine();
 //            bw.write("3. 조금만 더 힘내요!");
 //        } catch (IOException e) {

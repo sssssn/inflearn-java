@@ -14,8 +14,8 @@ public class _04_Folder {
         System.out.println("--------------------");
 
         folderName = "A/B/C";
-//        "A\\B\\C"
-//        "A" + File.separator + "B" + File.separator + "C"
+//        "A\\B\\C" (방법 1)
+//        "A" + File.separator + "B" + File.separator + "C" (방법 2)
 
         // 윈도우 : C:\\Users\\sn
         // 맥, 리눅스 : /Users/sn

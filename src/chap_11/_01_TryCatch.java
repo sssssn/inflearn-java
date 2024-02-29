@@ -4,13 +4,19 @@ public class _01_TryCatch {
     public static void main(String[] args) {
         // 예외 처리
         // 오류 : 컴파일 오류, 런타임 오류 (에러 error, 예외 exception)
-//        int i = "문자열"; // 컴파일 오류 (코드 문제)
+//        int i = "문자열"; // 컴파일 오류 (코드)
 
 //        int[] arr = new int[3];
-//        arr[5] = 100; // 런타임 오류 (실행 문제)
+//        arr[5] = 100; // 런타임 오류 (실행)
 
 //        S s = new S();
 //        s.methodA(); // 런타임 오류 (스택오버플로우 에러)
+
+//        try {
+//            시도하려는 코드
+//        } catch (Exception e) {
+//            문제 발생 시 처리
+//        }
 
         try {
 //            System.out.println(3 / 0);

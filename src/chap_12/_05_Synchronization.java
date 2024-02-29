@@ -20,7 +20,7 @@ public class _05_Synchronization {
                     }
 
                     if (i == 2) {
-                        throw new RuntimeException("못하겠어요!!");
+                        throw new RuntimeException("못하겠어요!!"); // 쓰레드1에 문제가 생기더라도
                     }
                 }
                 System.out.println("-- 직원1 청소 끝 --");
@@ -38,7 +38,7 @@ public class _05_Synchronization {
                     throw new RuntimeException(e);
                 }
             }
-            System.out.println("-- 직원2 청소 끝 --");
+            System.out.println("-- 직원2 청소 끝 --"); // 쓰레드2는 상관 없음
         };
 
         Thread cleanerThread1 = new Thread(cleaner1);

@@ -28,7 +28,7 @@ public class _01_Input {
 //        String lang = sc.nextLine(); // 입력받은 단어가 2개 이상인 경우 (방법 1) 문장으로 구분
         System.out.println("언어 : " + lang);
 
-        sc.nextLine(); // 입력받은 단어가 2개 이상인 경우 (방법 2) 불필요한 문장 삭제
+        sc.nextLine(); // 입력받은 단어가 2개 이상인 경우 (방법 2) 불필요한 문장(다음 단어) 삭제
 
         System.out.println("배우고 나니 기분이 어땠나요?");
 //        String feeling = sc.next();

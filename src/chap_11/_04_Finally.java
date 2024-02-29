@@ -12,6 +12,14 @@ public class _04_Finally {
             System.out.println("택시의 문을 닫는다.");
         }
 
+//        try {
+//            시도하려는 코드
+//        } catch (Exception e) {
+//            문제 발생 시 처리
+//        } finally {
+//            문제 발생 여부 상관없이 무조건 수행
+//        }
+
         // try + catch(s)
         // try + catch(s) + finally
         // try + finally

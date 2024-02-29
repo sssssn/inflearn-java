@@ -3,7 +3,7 @@ package chap_13;
 public class _02_Output {
     public static void main(String[] args) {
 //        System.out.format(); // (방법 1)
-//        System.out.printf(); // (방법 2)
+//        System.out.printf(); // (방법 2) ("포맷", 값1, 값2, 값3, ...);
 
         System.out.println("---------- 정수 ----------");
         // %n = \n
